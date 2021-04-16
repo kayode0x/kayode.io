@@ -1,0 +1,70 @@
+.homepageMobile {
+    position: relative;
+    padding: 0 1rem;
+    @media (min-width: 768px) {
+        padding: 0 5rem;
+    }
+    @media (max-width: 1023px) and (orientation: landscape) {
+        height: 100vh;
+    }
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    img {
+        height: 13rem;
+        width: 13rem;
+    }
+
+    h3 {
+        margin-top: -1.5rem;
+        font-size: 1.25rem;
+        @media (min-width: 768px) {
+            font-size: 1.35rem;
+        }
+
+        span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            @media (min-width: 768px) {
+                font-size: 1.75rem;
+            }
+        }
+    }
+
+    p {
+        color: rgb(182, 182, 182);
+        margin-top: -.5rem;
+        @media (min-width: 768px) {
+            margin-top: -.5rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    .browse {
+        margin-top: .5rem;
+        height: 3rem;
+        width: 8rem;
+        text-decoration: none;
+        color: #fff;
+        background: #2F52E0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        font-size: 1.25rem;
+        font-weight: bold;
+        @media (min-width: 768px) {
+            margin-top: 1.5rem;
+            font-size: 1.25rem;
+        }
+        @media (max-width: 1023px) and (orientation: landscape) {
+            margin-bottom: 3rem;
+            margin-top: .5rem;
+        }
+    }
+}

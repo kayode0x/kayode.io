@@ -1,24 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./components/About/About";
+import Home from "./components/Home/Home";
+import NavBar from "./components/NavBar/NavBar";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import PlayLists from "./components/About/PlayLists";
+import Work from "./components/Work/Work";
+import Error from "./components/Error404/Error";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import { useState, useEffect } from 'react';
 
 function App() {
+	const [activeNav, setActiveNav] = useState(1);
+	useEffect(() => {
+		const data = localStorage.getItem('activeNav');
+		if (data) {
+			setActiveNav(JSON.parse(data));
+		}
+	}, []);
+
+	useEffect(() => {
+		localStorage.setItem('activeNav', JSON.stringify(activeNav));
+	});
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+		<Router>
+			<NavBar activeNav={activeNav} setActiveNav={setActiveNav} />
+
+			<Switch>
+				<Route exact path="/">
+					<Home setActiveNav={setActiveNav} />
+					<Footer />
+				</Route>
+
+				<Route exact path="/about">
+					<About />
+				</Route>
+
+				<Route exact path="/about/playlists">
+					<PlayLists />
+				</Route>
+
+				<Route exact path="/work">
+					<Work />
+				</Route>
+
+				<Route exact path="/contact">
+					<Contact />
+				</Route>
+
+				<Route path="*">
+					<Error />
+				</Route>
+			</Switch>
+		</Router>
   );
 }
 

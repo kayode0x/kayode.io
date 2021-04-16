@@ -1,0 +1,48 @@
+.playlists {
+    padding: 0 1rem;
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: -1rem;
+    }
+    iframe {
+        height: 15rem;
+        overflow: auto;
+        margin-top: 2rem;
+    }
+    .lastIframe {
+        margin-bottom: 2rem;
+    }
+}
+
+.playlistsDesktop {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    margin-top: -3rem;
+
+    .playlist {
+        max-width: 800px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        iframe {
+            height: 15rem;
+            overflow: auto;
+        }
+    }
+}

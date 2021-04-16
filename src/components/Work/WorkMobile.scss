@@ -1,0 +1,110 @@
+.workMobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    color: #fff;
+    @media (min-width: 768px){
+        padding: 0 4rem;
+    }
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+
+    .intro {
+        margin-top: -1rem;
+        .workText {
+            font-size: 1.75rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .listText {
+            font-size: 1.15rem;
+
+            a {
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .projects {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .project {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                flex-direction: column;
+                height: 12rem;
+                width: 70%;
+                @media ( max-width: 575px ) {
+                    width: 90%;
+                }
+                margin: 1rem;
+                padding: 1rem;
+                background: rgba(#fff, 0.1);
+                border-radius: 4px;
+
+                a {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                .projectInfo {
+                    font-size: 1.15rem;
+                    font-weight: normal;
+                    color: #fff;
+                    margin-top: .5rem;
+                }
+
+                .projectTool {
+                    font-size: 0.85rem;
+                    color: rgb(194, 194, 194);
+                    margin-top: -.15rem;
+                }
+
+                .projectIcons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 20%;
+                    @media (min-width: 469px){
+                        width: 15%;
+                    }
+                    font-size: 1.5rem;
+                    color: #fff;
+
+                    a {
+                        font-size: 1.5rem;
+                    }
+                }
+
+            }
+        }
+
+        .otherProject {
+            font-size: 1.15rem;
+            text-align: center;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
