@@ -5,7 +5,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { SiTwitter, SiGithub, SiLinkedin } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 
-const NavBar = ({ activeNav, setActiveNav }) => {
+const NavBar = () => {
 	const matches = useMediaQuery('(max-width: 1023px)');
 	const [ showNav, setShowNav ] = useState(null);
 	const [ hideNav, setHideNav ] = useState(null);
@@ -58,28 +58,25 @@ const NavBar = ({ activeNav, setActiveNav }) => {
 						<div className="navLinks">
 							<div className="texts">
 								<Link
-									onClick={() => setActiveNav(1)}
-									className={activeNav === 1 ? 'activeNav' : ''}
 									to="/"
 								>
 									Home
 								</Link>
 								<Link
-									onClick={() => setActiveNav(2)}
-									className={activeNav === 2 ? 'activeNav' : ''}
 									to="/about"
 								>
 									About
 								</Link>
 								<Link
-									onClick={() => setActiveNav(3)}
-									className={activeNav === 3 ? 'activeNav' : ''}
 									to="/work"
 								>
 									Work
 								</Link>
 							</div>
-							<a onClick={() => setActiveNav(0)} className="contact" href="/contact">
+							<a 
+								className="contact" 
+								href="/contact"
+							>
 								Contact
 							</a>
 						</div>

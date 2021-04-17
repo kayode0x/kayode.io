@@ -3,7 +3,7 @@ import { useState } from 'react';
 import HomeMobile from './HomeMobile';
 import HomeDesktop from './HomeDesktop';
 
-const Home = ({ setActiveNav }) => {
+const Home = () => {
     const [heroIndex, setHeroIndex] = useState(1)
     const handleHeroChange = () => {
         if(heroIndex === 4){
@@ -18,7 +18,7 @@ const Home = ({ setActiveNav }) => {
 			{matches ? (
 				<HomeMobile heroIndex={heroIndex} handleHeroChange={handleHeroChange} />
 			) : (
-				<HomeDesktop setActiveNav={setActiveNav} heroIndex={heroIndex} handleHeroChange={handleHeroChange} />
+				<HomeDesktop heroIndex={heroIndex} handleHeroChange={handleHeroChange} />
 			)}
 		</>
 	);

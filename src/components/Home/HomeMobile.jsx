@@ -12,7 +12,7 @@ const HomeMobile = ({ heroIndex, handleHeroChange }) => {
 				Hey there, I'm <br /> <span>Kayode Ogunmakinwa.</span>
 			</h3>
 			<p>
-				A Computer Science student & Full-Stack Developer. I enjoy bringing ideas to life by building things
+				A Computer Science student #IUPUI23 & Full-Stack Developer. I enjoy bringing ideas to life by building things
 				that run on computers.
 			</p>
 

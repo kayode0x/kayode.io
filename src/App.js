@@ -7,29 +7,15 @@ import Work from "./components/Work/Work";
 import Error from "./components/Error404/Error";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import { useState, useEffect } from 'react';
 
 function App() {
-	const [activeNav, setActiveNav] = useState(1);
-	useEffect(() => {
-		const data = localStorage.getItem('activeNav');
-		if (data) {
-			setActiveNav(JSON.parse(data));
-		}
-	}, []);
-
-	useEffect(() => {
-		localStorage.setItem('activeNav', JSON.stringify(activeNav));
-	});
-
-
   return (
 		<Router>
-			<NavBar activeNav={activeNav} setActiveNav={setActiveNav} />
+			<NavBar/>
 
 			<Switch>
 				<Route exact path="/">
-					<Home setActiveNav={setActiveNav} />
+					<Home />
 					<Footer />
 				</Route>
 

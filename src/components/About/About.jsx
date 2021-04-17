@@ -19,7 +19,7 @@ const About = ( ) => {
 						</p>
 						<p className="subText2">
 							I'm currently shaping my skills on React Native, node.js and I'm open to contracts,
-							part-time roles and internships. #IUPUI'23.
+							part-time roles and internships.
 						</p>
 						<div className="subText3">
 							<p className="skills">Skills</p>
@@ -88,7 +88,7 @@ const About = ( ) => {
 						</p>
 						<p className="subText2">
 							I'm currently shaping my skills on React Native, node.js and I'm open to contracts,
-							part-time roles and internships. #IUPUI'23.
+							part-time roles and internships.
 						</p>
 						<div className="subText3">
 							<p className="skills">Skills</p>

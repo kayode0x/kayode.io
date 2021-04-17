@@ -1,7 +1,7 @@
 import './HomeDesktop.scss';
 import { SiTwitter, SiGithub, SiLinkedin } from 'react-icons/si';
 
-const HomeDesktop = ({ heroIndex, handleHeroChange, setActiveNav }) => {
+const HomeDesktop = ({ heroIndex, handleHeroChange }) => {
 	return (
 		<div className="mainHome">
 			<div className="home">
@@ -15,15 +15,12 @@ const HomeDesktop = ({ heroIndex, handleHeroChange, setActiveNav }) => {
 						Hey there, I'm <br /> <span>Kayode Ogunmakinwa.</span>
 					</p>
 					<p className="subText">
-						A Computer Science student & Full-Stack Developer. <br /> I enjoy bringing ideas to life by
+						A Computer Science student #IUPUI23 & Full-Stack Developer. I enjoy bringing ideas to life by
 						building things that run on computers.
 					</p>
 
 					<div className="buttons">
 						<a 
-							onClick={() =>{
-								setActiveNav(2)
-							}} 
 							className="browse" 
 							href="/about">
 							Explore
