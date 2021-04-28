@@ -5,41 +5,38 @@ import './WorkMobile.scss';
 const WorkMobile = () => {
 	return (
 		<div className="workMobile">
-			<div className="intro">
-				<p className="workText">Work</p>
-				<ul>
-					<li>
-						<p className="listText">
-							I'm currently building <a href="#landlord">Landlord</a>, and as the only tech inclined
-							person on the team, I'm overseeing both the front and back ends.
-						</p>
-					</li>
-					<li>
-						<p className="listText">
-							I'm also working on{' '}
-							<a
-								href="https://currency-exchange-0x.netlify.app/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Xchange
-							</a>
-							, a website that allows people convert between 160 currencies. You can get the source code{' '}
-							<a
-								href="https://github.com/kayode0x/Xchange-currency-converter"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								here
-							</a>
-							.
-						</p>
-					</li>
-				</ul>
-			</div>
 			<div className="body">
-				<p>Selected projects</p>
+				<p className="introTxt">Selected projects</p>
 				<div className="projects">
+					<div className="project">
+						<a href="https://github.com/kayode0x/Mini-Blog" target="_blank" rel="noopener noreferrer">
+							Mini-Blog
+						</a>
+						<p className="projectTool">React, SCSS</p>
+						<p className="projectInfo">Lightweight Blog, built with React.</p>
+						<div className="projectIcons">
+							<a href="https://github.com/kayode0x/Mini-Blog" target="_blank" rel="noopener noreferrer">
+								<SiGithub />
+							</a>
+						</div>
+					</div>
+
+					<div className="project">
+						<a href="https://github.com/kayode0x/kayode.io" target="_blank" rel="noopener noreferrer">
+							Kayode.io
+						</a>
+						<p className="projectTool">React, SCSS</p>
+						<p className="projectInfo">This website, built with React.</p>
+						<div className="projectIcons">
+							<a href="https://www.kayode.io/" target="_blank" rel="noopener noreferrer">
+								<BiLinkExternal />
+							</a>
+							<a href="https://github.com/kayode0x/kayode.io" target="_blank" rel="noopener noreferrer">
+								<SiGithub />
+							</a>
+						</div>
+					</div>
+
 					<div className="project1 project">
 						<a
 							href="https://github.com/kayode0x/RockPaperScissors"
@@ -68,11 +65,7 @@ const WorkMobile = () => {
 						</div>
 					</div>
 					<div className="project2 project">
-						<a
-							href="https://github-finder-0x.netlify.app/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href="https://github-finder-0x.netlify.app/" target="_blank" rel="noopener noreferrer">
 							GitHub-Finder
 						</a>
 						<p className="projectTool">HTML, CSS and Vanilla JavaScript</p>
@@ -93,11 +86,7 @@ const WorkMobile = () => {
 						</div>
 					</div>
 					<div className="project3 project">
-						<a
-							href="https://twitter.com/twotebot"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href="https://twitter.com/twotebot" target="_blank" rel="noopener noreferrer">
 							TwoteBot
 						</a>
 						<p className="projectTool">Python</p>

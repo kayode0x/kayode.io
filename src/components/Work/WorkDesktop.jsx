@@ -6,43 +6,30 @@ const WorkDesktop = () => {
     return (
 		<div className="workDesktop">
 			<div className="work">
-				<div className="intro">
-					<p className="workText">Work</p>
-					<ul>
-						<li>
-							<p className="listText">
-								I'm currently building <a href="#landlord-intentionally-left-blank">Landlord</a>, and as
-								the only tech inclined person on the team, I'm overseeing both the front and back ends.
-							</p>
-						</li>
-						<li>
-							<p className="listText">
-								I'm also working on{' '}
-								<a
-									href="https://currency-exchange-0x.netlify.app/"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Xchange
-								</a>
-								, a website that allows people convert between 160 currencies. You can get the source
-								code{' '}
-								<a
-									href="https://github.com/kayode0x/Xchange-currency-converter"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									here
-								</a>
-								.
-							</p>
-						</li>
-					</ul>
-				</div>
 				<div className="body">
 					<p className="selectedProjects">Selected projects</p>
 					<div className="projects">
 						<div id="oneDiv">
+							<div className="project">
+								<a
+									href="https://github.com/kayode0x/Mini-Blog"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Mini-Blog
+								</a>
+								<p className="projectTool">React, SCSS</p>
+								<p className="projectInfo">Lightweight Blog, built with React.</p>
+								<div className="projectIcons">
+									<a
+										href="https://github.com/kayode0x/Mini-Blog"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<SiGithub />
+									</a>
+								</div>
+							</div>
 							<div className="project">
 								<a
 									href="https://github.com/kayode0x/RockPaperScissors"
@@ -101,6 +88,33 @@ const WorkDesktop = () => {
 							</div>
 						</div>
 						<div id="twoDiv">
+							<div className="project">
+								<a
+									href="https://github.com/kayode0x/kayode.io"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Kayode.io
+								</a>
+								<p className="projectTool">React, SCSS</p>
+								<p className="projectInfo">This website, built with React.</p>
+								<div className="projectIcons">
+									<a
+										href="https://www.kayode.io/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<BiLinkExternal />
+									</a>
+									<a
+										href="https://github.com/kayode0x/kayode.io"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<SiGithub />
+									</a>
+								</div>
+							</div>
 							<div className="project">
 								<a href="https://twitter.com/twotebot" target="_blank" rel="noopener noreferrer">
 									TwoteBot

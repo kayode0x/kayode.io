@@ -1,7 +1,7 @@
 import './About.scss';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { SiJavascript, SiReact, SiHtml5, SiCss3, SiSass, SiMaterialUi, SiNetlify } from 'react-icons/si';
-import { SiGithub, SiPostman } from 'react-icons/si';
+import { SiGithub, SiPostman, SiMongodb, SiNodeDotJs } from 'react-icons/si';
 import { BiLinkExternal } from 'react-icons/bi';
 
 const About = ( ) => {
@@ -30,6 +30,12 @@ const About = ( ) => {
 								</li>
 								<li>
 									React Js, JSX <SiReact />
+								</li>
+								<li>
+									Node Js <SiNodeDotJs />
+								</li>
+								<li>
+									Mongo DB <SiMongodb />
 								</li>
 								<li>
 									HTML 5 <SiHtml5 />
@@ -101,22 +107,31 @@ const About = ( ) => {
 									<li>
 										React Js, JSX <SiReact />
 									</li>
+
 									<li>
-										HTML 5 <SiHtml5 />
+										Node Js <SiNodeDotJs />
+									</li>
+
+									<li>
+										Mongo DB <SiMongodb />
 									</li>
 									<li>
-										CSS 3 <SiCss3 />
+										Netlify <SiNetlify />
 									</li>
 								</ul>
 								<ul>
 									<li>
+										HTML 5 <SiHtml5 />
+									</li>
+									<li>
 										SASS - SCSS <SiSass />
+									</li>
+
+									<li>
+										CSS 3 <SiCss3 />
 									</li>
 									<li>
 										Material UI <SiMaterialUi />
-									</li>
-									<li>
-										Netlify <SiNetlify />
 									</li>
 								</ul>
 							</div>
