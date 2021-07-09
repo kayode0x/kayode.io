@@ -12,9 +12,25 @@ import cpp from '../../assets/logos/cpp.png';
 import python from '../../assets/logos/python.png';
 import aws from '../../assets/logos/aws.png';
 import ocean from '../../assets/logos/ocean.png';
+import adobe from '../../assets/logos/adobe.png';
 
 const Stack = () => {
-	const images = [javascript, typescript, react, node, github, netlify, sass, postman, mongodb, aws, ocean, python, cpp];
+	const images = [
+		javascript,
+		typescript,
+		react,
+		node,
+		github,
+		netlify,
+		sass,
+		postman,
+		mongodb,
+		aws,
+		ocean,
+		python,
+		cpp,
+		adobe,
+	];
 
 	return (
 		<div id="stack">
