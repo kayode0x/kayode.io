@@ -127,6 +127,7 @@
 			margin-left: -0.5rem;
 			@media (max-width: 767px) {
 				width: 100%;
+				margin-left: 0rem;
 				justify-content: center;
 			}
 			a:nth-child(1) {
@@ -190,7 +191,7 @@
 		@media (max-width: 767px) {
 			align-self: center;
 			justify-self: center;
-			left: 44%;
+			left: 45%;
 		}
 		@media (max-width: 812px) and (orientation: landscape){
 			display: none;
