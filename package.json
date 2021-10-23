@@ -27,7 +27,7 @@
     "redux-persist": "^6.0.0",
     "ssri": "^6.0.2",
     "trim-newlines": "^3.0.1",
-    "web-vitals": "^1.0.1",
+    "web-vitals": "1.1.2",
     "ws": "^7.5.2"
   },
   "scripts": {
