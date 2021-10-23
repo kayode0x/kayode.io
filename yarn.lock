@@ -9650,10 +9650,10 @@ react-scroll-motion@^0.2.1:
   resolved "https://registry.npmjs.org/react-scroll-motion/-/react-scroll-motion-0.2.1.tgz"
   integrity sha512-l2/t8/IWI8CWaXuxq3bwNu09ABaM7+0Wm/2/S/zHp02sEpTeffqylQzWUZZykOgBqC6/uZsqVdAvDkcsPKZ6XQ==
 
-react-scroll@^1.8.2:
-  version "1.8.2"
-  resolved "https://registry.npmjs.org/react-scroll/-/react-scroll-1.8.2.tgz"
-  integrity sha512-f2ZEG5fsPbPTySI9ekcFpETCcNlqbmwbQj9hhzYK8tkgv+PA8APatSt66o/q0KSkDZxyT98ONTtXp9x0lyowEw==
+react-scroll@1.8.4:
+  version "1.8.4"
+  resolved "https://registry.npmjs.org/react-scroll/-/react-scroll-1.8.4.tgz"
+  integrity sha512-J9rFqmdzularCXJoK2vleHVg2//y9Fs6zh7K13x7Yz3Y1kHPfQ/TTq029L09q1Gr5/5JjFLBOB2Sa3yYIqyTyQ==
   dependencies:
     lodash.throttle "^4.1.1"
     prop-types "^15.7.2"
